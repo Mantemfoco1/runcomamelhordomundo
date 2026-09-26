@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Um convite especial</title>
+    <title>Convite</title>
 
     <style>
         * {
@@ -15,18 +15,20 @@
         body {
             margin: 0;
             min-height: 100vh;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             font-family: Arial, Helvetica, sans-serif;
 
-            /* Fundo com jantar à luz de velas */
+            /* Fundo: parque com clima esportivo */
             background:
                 linear-gradient(
-                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.40),
                     rgba(0, 0, 0, 0.65)
                 ),
-                url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1600&q=85");
+                url("https://images.unsplash.com/photo-1530137073524-4e7c4e0e0f6e?auto=format&fit=crop&w=1600&q=85");
 
             background-size: cover;
             background-position: center;
@@ -36,41 +38,50 @@
         .convite {
             width: 90%;
             max-width: 430px;
+
             padding: 35px 25px;
+
             text-align: center;
 
             background: rgba(0, 0, 0, 0.72);
+
             border-radius: 22px;
+
+            border: 1px solid rgba(255, 255, 255, 0.20);
 
             box-shadow:
                 0 10px 35px rgba(0, 0, 0, 0.55),
-                0 0 30px rgba(255, 190, 100, 0.15);
-
-            border: 1px solid rgba(255, 255, 255, 0.18);
+                0 0 30px rgba(255, 255, 255, 0.08);
         }
 
-        .titulo {
-            color: #ffffff;
+        .texto {
+            color: white;
+
             font-size: 25px;
             line-height: 1.45;
+
             font-weight: bold;
+
             margin-bottom: 30px;
         }
 
         .botao {
             display: inline-block;
+
             padding: 15px 28px;
 
             background: #25D366;
             color: white;
 
             text-decoration: none;
+
             font-size: 18px;
             font-weight: bold;
 
             border-radius: 12px;
 
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            box-shadow:
+                0 5px 15px rgba(0, 0, 0, 0.35);
 
             transition: 0.3s;
         }
@@ -84,7 +95,7 @@
             transform: scale(0.98);
         }
 
-        .whatsapp {
+        .icone {
             margin-right: 8px;
         }
 
@@ -95,7 +106,7 @@
                 padding: 30px 20px;
             }
 
-            .titulo {
+            .texto {
                 font-size: 21px;
             }
 
@@ -111,19 +122,19 @@
 
     <div class="convite">
 
-        <div class="titulo">
-            Sexta te busco 20:00,<br><br>
-            sua responsabilidade é apenas me mandar o endereço
-            e estar presente às 20:00.
+        <div class="texto">
+            Um café juntos pós um corre de 5km no domingo?
+            <br><br>
+            Para me dar a resposta, clique aqui.
         </div>
 
         <a
             class="botao"
-            href="https://wa.me/5511970218569?text=Confirmado!%20Sexta%20%C3%A0s%2020:00.%20Vou%20te%20mandar%20o%20endere%C3%A7o."
+            href="https://wa.me/5511970218569?text=Estarei%20te%20esperando%20no%20endere%C3%A7o%20%C3%A9%3A"
             target="_blank"
         >
-            <span class="whatsapp">💬</span>
-            Falar no WhatsApp
+            <span class="icone">💬</span>
+            Responder no WhatsApp
         </a>
 
     </div>
@@ -131,3 +142,4 @@
 </body>
 </html>
 ```
+
