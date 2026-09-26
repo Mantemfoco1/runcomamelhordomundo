@@ -1,14 +1,16 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Café pós-corre</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -22,114 +24,204 @@
         }
 
         body {
-    margin: 0;
-    min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+            min-height: 100vh;
 
-    font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    background:
-        linear-gradient(
-            rgba(0, 0, 0, 0.40),
-            rgba(0, 0, 0, 0.65)
-        ),
-        url("./crossfit.jpg");
+            font-family: Arial, Helvetica, sans-serif;
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+            /* FOTO DO GITHUB */
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.60)
+                ),
+                url("./crossfit.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
         }
 
+
+        /* CAIXA CENTRAL */
+
+        .convite {
+
+            width: 90%;
+            max-width: 450px;
+
+            padding: 40px 30px;
+
+            background: rgba(0, 0, 0, 0.82);
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            border: 2px solid rgba(255, 255, 255, 0.35);
+
+            box-shadow:
+                0 15px 50px rgba(0, 0, 0, 0.75);
+
+        }
+
+
         /* TEXTO */
+
         .texto {
-            color: white;
 
-            font-size: 25px;
+            color: #ffffff;
 
-            line-height: 1.45;
+            font-size: 26px;
+
+            line-height: 1.5;
 
             font-weight: bold;
 
-            margin-bottom: 30px;
+            text-shadow:
+                2px 2px 5px rgba(0, 0, 0, 0.9);
+
+            margin-bottom: 35px;
+
         }
 
+
         /* BOTÃO WHATSAPP */
+
         .botao {
+
             display: inline-block;
 
-            padding: 15px 25px;
+            padding: 17px 28px;
 
             background: #25D366;
 
-            color: white;
+            color: #ffffff;
 
             text-decoration: none;
 
-            font-size: 18px;
+            font-size: 19px;
 
             font-weight: bold;
 
-            border-radius: 12px;
+            border-radius: 14px;
+
+            border: 2px solid #ffffff;
 
             box-shadow:
-                0 5px 15px rgba(0, 0, 0, 0.40);
+                0 6px 20px rgba(0, 0, 0, 0.6);
 
             transition: all 0.3s ease;
+
         }
+
+
+        /* EFEITO AO PASSAR O MOUSE */
 
         .botao:hover {
+
             background: #1ebe5d;
 
-            transform: scale(1.05);
+            transform: scale(1.06);
+
         }
+
+
+        /* EFEITO AO CLICAR */
 
         .botao:active {
+
             transform: scale(0.97);
+
         }
+
+
+        /* ÍCONE */
 
         .icone {
+
             margin-right: 8px;
+
+            font-size: 22px;
+
         }
 
+
         /* CELULAR */
+
         @media (max-width: 480px) {
 
             .convite {
+
                 width: 92%;
 
-                padding: 30px 20px;
+                padding: 35px 22px;
+
             }
+
 
             .texto {
-                font-size: 21px;
+
+                font-size: 22px;
+
+                line-height: 1.45;
+
             }
+
 
             .botao {
+
                 font-size: 17px;
 
-                padding: 14px 20px;
+                padding: 15px 20px;
+
             }
+
         }
+
     </style>
 
 </head>
 
+
 <body>
+
 
     <div class="convite">
 
+
         <div class="texto">
+
             Um café juntos pós um corre de 5km no domingo?
+
             <br><br>
+
             Para me dar a resposta, clique aqui.
+
         </div>
+
 
         <a
             class="botao"
             href="https://wa.me/5511970218569?text=Estarei%20te%20esperando%20no%20endere%C3%A7o%20%C3%A9%3A"
-            target="
-```
+            target="_blank"
+        >
+
+            <span class="icone">💬</span>
+
+            Responder no WhatsApp
+
+        </a>
+
+
+    </div>
+
+
+</body>
+
+</html>
