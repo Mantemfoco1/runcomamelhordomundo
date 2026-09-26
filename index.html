@@ -1,19 +1,27 @@
 ```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Convite</title>
+    <title>Café pós-corre</title>
 
     <style>
         * {
             box-sizing: border-box;
         }
 
+        html,
         body {
             margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
             min-height: 100vh;
 
             display: flex;
@@ -22,42 +30,45 @@
 
             font-family: Arial, Helvetica, sans-serif;
 
-            /* Fundo: parque com clima esportivo */
-            background:
+            /* FOTO DO PARQUE / CROSSFIT */
+            background-image:
                 linear-gradient(
                     rgba(0, 0, 0, 0.40),
                     rgba(0, 0, 0, 0.65)
                 ),
-                url("https://images.unsplash.com/photo-1530137073524-4e7c4e0e0f6e?auto=format&fit=crop&w=1600&q=85");
+                url("./crossfit.jpg");
 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
+        /* TELA PEQUENA */
         .convite {
             width: 90%;
             max-width: 430px;
 
             padding: 35px 25px;
 
-            text-align: center;
-
-            background: rgba(0, 0, 0, 0.72);
+            background: rgba(0, 0, 0, 0.75);
 
             border-radius: 22px;
 
-            border: 1px solid rgba(255, 255, 255, 0.20);
+            text-align: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.25);
 
             box-shadow:
-                0 10px 35px rgba(0, 0, 0, 0.55),
-                0 0 30px rgba(255, 255, 255, 0.08);
+                0 10px 40px rgba(0, 0, 0, 0.60);
         }
 
+        /* TEXTO */
         .texto {
             color: white;
 
             font-size: 25px;
+
             line-height: 1.45;
 
             font-weight: bold;
@@ -65,44 +76,50 @@
             margin-bottom: 30px;
         }
 
+        /* BOTÃO WHATSAPP */
         .botao {
             display: inline-block;
 
-            padding: 15px 28px;
+            padding: 15px 25px;
 
             background: #25D366;
+
             color: white;
 
             text-decoration: none;
 
             font-size: 18px;
+
             font-weight: bold;
 
             border-radius: 12px;
 
             box-shadow:
-                0 5px 15px rgba(0, 0, 0, 0.35);
+                0 5px 15px rgba(0, 0, 0, 0.40);
 
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
 
         .botao:hover {
+            background: #1ebe5d;
+
             transform: scale(1.05);
-            background: #20bd5a;
         }
 
         .botao:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
         .icone {
             margin-right: 8px;
         }
 
+        /* CELULAR */
         @media (max-width: 480px) {
 
             .convite {
                 width: 92%;
+
                 padding: 30px 20px;
             }
 
@@ -112,10 +129,12 @@
 
             .botao {
                 font-size: 17px;
-                padding: 14px 22px;
+
+                padding: 14px 20px;
             }
         }
     </style>
+
 </head>
 
 <body>
@@ -131,15 +150,5 @@
         <a
             class="botao"
             href="https://wa.me/5511970218569?text=Estarei%20te%20esperando%20no%20endere%C3%A7o%20%C3%A9%3A"
-            target="_blank"
-        >
-            <span class="icone">💬</span>
-            Responder no WhatsApp
-        </a>
-
-    </div>
-
-</body>
-</html>
+            target="
 ```
-
